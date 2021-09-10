@@ -1,2 +1,2 @@
 # legends
-Um site para homenagear quatro grandes lendas ganhadores do prêmio de melhor jogador do mundo.
+A site to honor four great legends who won the best player in the world award. 
