@@ -4,67 +4,71 @@
         <meta charset="UTF-8">
         <meta name="description" content="Página principal do site para homenagear quatro ganhadores do prêmio de melhor jogador de futebol do mundo.">
         <meta name="author" content="Yann Figueiredo">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/main.css" rel="stylesheet">
         <link href="css/normalize.css" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"> 
 
         <title>Home</title>
     </head>
     <body>
         <header class="main-header">
-            <h1>Best Players</h1>
-            <nav class="menu-header">
-                <ul class="header-menu-items">
-                    <li>Home</li>
-                    <li>Títulos</li>
-                    <li>Clubes</li>
-                    <li>Sobre</li>
+            <a href="#" class="site-title">Best Players</a>
+            <button class="btn-menu"><i class="fas fa-bars fa-2x"></i></button>
+            <nav style="display: none;" class="menu-header">
+                <ul class="menu-header-items">
+                    <a href="#"><li>Home</li></a>
+                    <a href="#"><li>Títulos</li></a>
+                    <a href="#"><li>Clubes</li></a>
+                    <a href="#"><li>Sobre</li></a>
                 </ul>
             </nav>
         </header>
-        <section class="presentation-section">
-            <h2>Grandes lendas do futebol</h2>
-            <h3>Em algum momento foram os melhores do mundo.</h3>
-            <a><button class="btn-rect btn-transparent">Veja os vencedores</button></a>
-            <img src="img/arrowup.png" alt="Seta apontando para cima">
-        </section>
-        <section class="players-section">
-            <article class="players-article">
+        <div class="container">
+            <section class="presentation">
+                <h1>Grandes lendas do futebol</h1>
+                <p>Em algum momento foram os melhores do mundo.</p>
+                <a><button class="btn-rect btn-transparent">Veja os vencedores</button></a>
+            </section>
+        </div>
+        <section class="players-cards">
+            <article class="player-card">
                 <header>
                     <img src="img/c01.jpg" alt="Plano de fundo do Cristiano Ronaldo">
                     <img src="img/player01.png" alt="Foto do Cristiano Ronaldo">
                 </header>
-                <h4>Cristiano Ronaldo</h4>
+                <h2>Cristiano Ronaldo</h2>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mattis suscipit est, ut imperdiet tortor. Proin sed molestie massa.
                 </p>
             </article>
-            <article class="players-article">
+            <article class="player-card">
                 <header>
                     <img src="img/c02.jpg" alt="Plano de fundo do Lionel Messi">
                     <img src="img/player02.png" alt="Foto do Lionel Messi">
                 </header>
-                <h4>Lional Messi</h4>
+                <h2>Lional Messi</h2>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mattis suscipit est, ut imperdiet tortor. Proin sed molestie massa.
                 </p>
             </article>
-            <article class="players-article">
+            <article class="player-card">
                 <header>
                     <img src="img/c03.jpg" alt="Plano de fundo do Ronaldo">
                     <img src="img/player03.png" alt="Foto do Ronaldo">
                 </header>
-                <h4>Ronaldo</h4>
+                <h2>Ronaldo</h2>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mattis suscipit est, ut imperdiet tortor. Proin sed molestie massa.
                 </p>
             </article>
-            <article class="players-article">
+            <article class="player-card">
                 <header>
                     <img src="img/c04.jpg" alt="Plano de fundo do Ronaldinho Gaúcho">
                     <img src="img/player04.png" alt="Foto do Ronaldinho Gaúcho">
                 </header>
-                <h4>Ronaldinho Gaúcho</h4>
+                <h2>Ronaldinho Gaúcho</h2>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mattis suscipit est, ut imperdiet tortor. Proin sed molestie massa.
                 </p>
@@ -108,8 +112,8 @@
         </section>
         <section class="slides-section">
             <i class="fas fa-chevron-left"></i>
-            <img src="img/slider/slide-01.png" alt="Foto de Cristiano Ronaldo e Messi">
-            <i class="fas fa-chevron-right"></i>
+            <!--<img src="img/slider/slide-01.png" alt="Foto de Cristiano Ronaldo e Messi">
+            --><i class="fas fa-chevron-right"></i>
         </section>
         <section class="comments-section">
             <i class="fas fa-chevron-left"></i>
