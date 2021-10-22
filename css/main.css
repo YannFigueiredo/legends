@@ -5,6 +5,10 @@ body{
     width: 100%;
 }
 
+img{
+    max-width: 100%;
+}
+
 .container{
     width: 100%;
     padding: 0 1em 0 1em;
@@ -106,6 +110,7 @@ body{
     align-items: center;
     text-align: center;
     padding: 40px 20px;
+    margin-bottom: 30px;
 }
 
 .presentation-title{
@@ -124,4 +129,42 @@ body{
     margin: 5px 30px 35px;
     font-size: 16px;
     padding: 20px 20px;
+}
+
+.player-card{
+    text-align: center;
+}
+
+.player-card-bg{
+    width: 100%;
+}
+
+.player-card-photo{
+    margin: -55px auto;
+    width: 88px;
+    height: 88px;
+    overflow: hidden;
+}
+
+.player-card-content{
+    padding: 60px 12px 20px 12px;
+    border-left: 1px solid rgb(201, 201, 197);
+}
+
+.player-card h2{
+    font-size: 1.3em;
+}
+
+.player-card p{
+    font-size: 0.9em;
+}
+
+.player-card:hover{
+    outline: 3px solid blue;
+    outline-offset: -3px;
+    box-sizing: border-box;
+}
+
+.player-card:hover .player-card-photo img{
+    transform: translate(0, -88px);
 }
