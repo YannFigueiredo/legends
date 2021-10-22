@@ -19,7 +19,8 @@ img{
 
 .btn-rect{
     border-radius: 6px;
-    padding: 12px 15px;
+    padding: 16px 25px;
+    width: 140px;
     color: white;
     text-transform: uppercase;
     border: none;
@@ -30,6 +31,20 @@ img{
 .btn-transparent{
     background-color: rgba(0, 0, 0, 0.5);
     border: 0.1px solid rgba(255, 255, 255, 0.5);
+}
+
+.btn-green{
+    background-color: rgb(26, 167, 26);
+    transition: all 0.3s linear; 
+}
+
+.btn-black{
+    background-color: rgb(51, 51, 49);
+    transition: all 0.3s linear;
+}
+
+.btn-green:hover, .btn-black:hover{
+    background-color: rgb(156, 152, 152);
 }
 
 .main-header{
@@ -133,6 +148,7 @@ img{
 
 .player-card{
     text-align: center;
+    color: rgb(116, 116, 112);
 }
 
 .player-card-bg{
@@ -167,4 +183,47 @@ img{
 
 .player-card:hover .player-card-photo img{
     transform: translate(0, -88px);
+}
+
+.award-story{
+    border-top: 1px solid rgb(201, 201, 197);
+    background-color: rgb(245, 241, 241);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    color: rgb(116, 116, 112);
+}
+
+.award-story h3{
+    font-size: 1.3em;
+}
+
+.award-story p{
+    font-size: 0.9em;
+}
+
+.award-story .btn-green{
+    margin: 0 15px 45px 0;
+}
+
+/*GALLERY SECTION*/
+.gallery{
+    margin: 0;
+}
+
+.gallery header{
+    background-color: rgb(26, 167, 26);
+    padding: 0.5px 0;
+}
+
+.gallery h4{
+    color: white;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+.pictures{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-auto-rows: auto;
+    grid-gap: 0;
 }
