@@ -8,7 +8,7 @@
         <link href="css/main.css" rel="stylesheet">
         <link href="css/normalize.css" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet"> 
 
         <title>Home</title>
     </head>
@@ -128,24 +128,27 @@
                 <img src="img/gallery/12.jpg" alt="Imagem 3 do Ronaldinho Gaúcho na galeria">
             </div>
         </section>
-        <section class="slides-section">
-            <i class="fas fa-chevron-left"></i>
-            <!--<img src="img/slider/slide-01.png" alt="Foto de Cristiano Ronaldo e Messi">
-            --><i class="fas fa-chevron-right"></i>
+        <section class="slides container">
+            <i class="fas fa-chevron-left prev"></i>
+            <div class="photos-slides">
+                <figure><img src="img/slider/slide-01.png" alt="Foto de Cristiano Ronaldo e Messi"></figure>
+                <figure><img src="img/slider/slide-02.png" alt="Foto de Ronaldo e Ronaldinho Gaúcho"></figure>
+            </div>
+            <i class="fas fa-chevron-right next"></i>
         </section>
-        <section class="comments-section">
-            <i class="fas fa-chevron-left"></i>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mattis suscipit est, ut imperdiet tortor. Proin sed molestie
-            </p>
-            <p>
-                Nam mi enim, auctor. 
-            </p>
-            <i class="fas fa-chevron-right"></i>
+        <section class="comments container">
+            <i class="fas fa-chevron-left prev"></i>
+            <figure>
+                <p>
+                    <i>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mattis suscipit est, ut imperdiet tortor. Proin sed molestie</i>
+                </p>
+                <figcaption>Nam mi enim, auctor.</figcaption>
+            </figure>
+            <i class="fas fa-chevron-right next"></i>
         </section>
     </body>
-    <footer>
-        <h6>Best Players</h6>
+    <footer class="footer-main container">
+        <h4 class="footer-title">Best Players</h4>
         <div>
             <p>
                 Nam mi enim, auctor non ultricies a, fringilla eu risus. Praesent vitae lorem et elit tincidunt accumsan suscipit eu libero. Maecenas diam est, venenatis vitae dui in, vestibulum mollis arcu. Donec eu nibh tincidunt, dapibus sem eu, aliquam dolor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum consectetur commodo eros, vitae laoreet lectus aliq.
@@ -157,7 +160,7 @@
             </p>
         </div>
         <nav>
-            <ul>
+            <ul class="footer-menu">
                 <li>Cristiano Ronaldo</li>
                 <li>Lionel Messi</li>
                 <li>Ronaldo</li>
