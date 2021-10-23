@@ -185,8 +185,8 @@ img{
 }
 
 .player-card:hover{
-    outline: 3px solid blue;
-    outline-offset: -3px;
+    outline: 5px solid rgb(26, 167, 26);
+    outline-offset: -5px;
     box-sizing: border-box;
 }
 
@@ -291,4 +291,13 @@ img{
 .footer-main .footer-menu{
     list-style-type: none;
     font-size: 0.9em;
+}
+
+.footer-menu a{
+    text-decoration: none; 
+}
+
+.footer-menu a:visited{
+    color: rgb(116, 116, 112);
+    text-decoration: none; 
 }
