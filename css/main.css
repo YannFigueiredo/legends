@@ -318,7 +318,31 @@ img{
     }
 
     .menu-header{
+        clear: none;
+        margin-top: 8px;
+        width: 75%;
+    }
+
+    .menu-header-items{
         display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+
+    .menu-header-items li{
+        background: none;
+        margin: 0;
+        flex-grow: 1;
+        border: none;
+    }
+
+    .menu-header-items a{
+        color: rgb(51, 51, 49);
+    }
+
+    .menu-header-items a:hover{
+        color: rgb(26, 167, 26);
     }
 
     /*PLAYERS CARDS SECTION*/
