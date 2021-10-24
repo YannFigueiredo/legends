@@ -12,7 +12,7 @@ img{
 
 .container{
     width: 100%;
-    padding: 0 1em 0 1em;
+    padding: 0 16px 0 16px;
     margin-right: auto;
     margin-left: auto;
     box-sizing: border-box;
@@ -89,7 +89,6 @@ img{
 .menu-header{
     width: 100%;
     clear: left;
-    background-color: plum;
 }
 
 .menu-header-items{
@@ -219,15 +218,16 @@ img{
     margin: 0;
 }
 
-.gallery header{
+.gallery-title{
     background-color: rgb(26, 167, 26);
-    padding: 0.5px 0;
+    padding: 20px 0;
 }
 
-.gallery h4{
+.gallery-title h4{
     color: white;
     text-transform: uppercase;
     font-size: 24px;
+    margin: 0;
 }
 
 .pictures{
@@ -300,4 +300,52 @@ img{
 .footer-menu a:visited{
     color: rgb(116, 116, 112);
     text-decoration: none; 
+}
+
+@media screen and (min-width: 1025px) {
+    /*GERAL*/
+    .container{
+        padding: 0 150px 0 150px;
+    }
+    
+    /*HEADER*/
+    .site-title{
+        padding-left: 150px;
+    }
+
+    .btn-menu{
+        display: none;
+    }
+
+    .menu-header{
+        display: flex;
+    }
+
+    /*PLAYERS CARDS SECTION*/
+    .players-cards{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: auto;
+        grid-gap: 20px;
+    }
+
+    /*AWARD STORY SECTION*/
+    .award-story{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: auto;
+        grid-gap: 20px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    /*FOOTER*/
+    .footer-main{
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        grid-auto-rows: auto;
+        grid-gap: 30px;
+        padding-top: 30px;
+        padding-bottom: 200px;
+    }
 }
