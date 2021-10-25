@@ -9,9 +9,9 @@ function Menu(config){
         closeMenu();
     
     window.addEventListener('resize', function(){
-        if(window.outerWidth >= 1037){
-            openMenu();
-        }else if(window.outerWidth < 1037){
+        if(window.innerWidth >= _this.widthEnabled){
+            _this.menu.removeAttribute('style');
+        }else if(window.innerWidth < _this.widthEnabled){
             closeMenu();
         }
     }); 
@@ -25,17 +25,16 @@ function Menu(config){
     });
 
     function closeMenu(){
-        if(checkClosedMenu() == false)
-            _this.menu.classList.add('menu-header-close');
+        _this.menu.style.maxHeight = '0px';
+        _this.menu.style.overflow = 'hidden';
     }
 
     function openMenu(){
-        if(checkClosedMenu() == true)
-            _this.menu.classList.remove('menu-header-close');
+        _this.menu.style.maxHeight = 'calc(100vh - '+ _this.menu.getBoundingClientRect().top +'px)';
     }
 
     function checkClosedMenu(){
-        if(_this.menu.classList.contains('menu-header-close')){
+        if(_this.menu.style.maxHeight == '0px'){
             return true;
         }else{
             return false;
