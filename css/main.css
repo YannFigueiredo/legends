@@ -1,3 +1,4 @@
+/*GERAL*/
 body{
     margin: 0;
     padding: 0;
@@ -24,7 +25,7 @@ img{
 
 .no-show{
     opacity: 0;
-    display: none;
+    /*display: none;*/
 }
 
 .prev, .next{
@@ -64,6 +65,7 @@ img{
     background-color: rgb(156, 152, 152);
 }
 
+/*MAIN HEADER*/
 .main-header{
     width: 100%;
     background-color: #fff;
@@ -139,6 +141,7 @@ img{
     list-style-type: none;
 }
 
+/*PRESENTATION SECTION*/
 .presentation{
     clear: right;
     height: 70vh;
@@ -213,6 +216,7 @@ img{
     transform: translate(0, -88px);
 }
 
+/*AWARD STORY SECTION*/
 .award-story{
     border-top: 1px solid rgb(201, 201, 197);
     background-color: rgb(245, 241, 241);
@@ -266,8 +270,23 @@ img{
 }
 
 .photos-slides{
-    padding-top: 30px;
-    padding-bottom: 15px;
+    position: relative;
+    max-width: 925px;
+    width: 80%;
+}
+
+.photos-slides figure{
+    opacity: 0;
+    transition: 1s opacity;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.photos-slides figure.show{
+    opacity: 1;
+    position: static;
 }
 
 /*COMMENTS SECTION*/
@@ -277,18 +296,34 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 400px;
 }
 
 .comments-area{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    position: relative;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.comments figure.show{
+    opacity: 1;
+    position: static;
 }
 
 .comments figure{
-    padding: 30px 15px 30px 15px;
+    /*padding: 30px 15px 30px 15px;*/
+    opacity: 0;
+    transition: 0.7s opacity;
+    position: absolute;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.comments figure figcaption{
+    text-align: center;
 }
 
 .comments figure p{
@@ -300,7 +335,7 @@ img{
     text-align: center;
 }
 
-/*FOOTER*/
+/*MAIN FOOTER*/
 .footer-main{
     background-color: rgb(51, 51, 49);
     color: rgb(116, 116, 112);
@@ -340,7 +375,7 @@ img{
         padding: 0 150px 0 150px;
     }
     
-    /*HEADER*/
+    /*MAIN HEADER*/
     .site-title{
         padding-left: 150px;
         box-sizing: border-box;
@@ -398,7 +433,7 @@ img{
         padding-bottom: 40px;
     }
 
-    /*FOOTER*/
+    /*MAIN FOOTER*/
     .footer-main{
         display: grid;
         grid-template-columns: repeat(4, auto);
