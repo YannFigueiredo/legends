@@ -35,12 +35,6 @@ function Carousel(config){
             if(i != currentItem && _this.items[i].classList.contains('show')){
                 _this.items[i].classList.remove('show');
             }
-
-            /*if(i == currentItem){
-                _this.items[i].style.removeProperty('display');
-            }else{
-                _this.items[i].style.display = 'none';
-            }*/
         }
     }
 }

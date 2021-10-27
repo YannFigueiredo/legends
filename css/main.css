@@ -38,7 +38,7 @@ img{
 .btn-rect{
     border-radius: 6px;
     padding: 16px 25px;
-    width: 140px;
+    width: 160px;
     color: white;
     text-transform: uppercase;
     border: none;
@@ -300,10 +300,14 @@ img{
 
 .comments-area{
     width: 100%;
-    max-width: 600px;
+    max-width: 925px;
     position: relative;
     margin: auto;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .comments figure.show{
@@ -312,9 +316,8 @@ img{
 }
 
 .comments figure{
-    /*padding: 30px 15px 30px 15px;*/
     opacity: 0;
-    transition: 0.7s opacity;
+    transition: opacity 1s;
     position: absolute;
     box-sizing: border-box;
     top: 0;

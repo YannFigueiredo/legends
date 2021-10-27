@@ -31,6 +31,7 @@ function Menu(config){
 
     function openMenu(){
         _this.menu.style.maxHeight = 'calc(100vh - '+ _this.menu.getBoundingClientRect().top +'px)';
+        _this.menu.style.overflow = 'auto';
     }
 
     function checkClosedMenu(){
